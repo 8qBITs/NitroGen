@@ -65,7 +65,7 @@ class masterThread(threading.Thread):
             try:
                 current_code = codeGenerator()
 
-                url = 'https://discordapp.com/api/v6/entitlements/gift-codes/' + current_code + '?with_application=false&with_subscription_plan=true'
+                url = 'https://discordapp.com/api/v9/entitlements/gift-codes/' + current_code + '?with_application=false&with_subscription_plan=true'
                 raw_proxy = getProxy()
                 proxy = {'https': 'https://' + raw_proxy}
 
